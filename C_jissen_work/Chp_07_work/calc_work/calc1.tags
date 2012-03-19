@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+INCLUDE_CTYPE_H	calc1.c	31;"	d	file:
+INCLUDE_MATH_H	calc1.c	36;"	d	file:
+INCLUDE_STDIO_H	calc1.c	16;"	d	file:
+INCLUDE_STDLIB_H	calc1.c	21;"	d	file:
+INCLUDE_STRING_H	calc1.c	26;"	d	file:
+INCLUDE_TIME_H	calc1.c	41;"	d	file:
+line	calc1.c	/^char	line[100];	\/* input line data	*\/$/;"	v
+main	calc1.c	/^int main()$/;"	f
+operator	calc1.c	/^char	operator;	\/* operator designated by the user	*\/$/;"	v
+result	calc1.c	/^int		result;		\/* result of calc	*\/$/;"	v
+show	calc1.c	45;"	d	file:
+show1	calc1.c	47;"	d	file:
+value	calc1.c	/^int		value;		\/* value input after the operator	*\/$/;"	v

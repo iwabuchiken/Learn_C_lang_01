@@ -1,0 +1,18 @@
+＜演算の実行＞
+１．ケース１
+入力			結果
++ 123		123
++ 52		175
+x 37		出力: "Unknown operator"
+
+2. Case 2
+Input		Result
++ 123		123
++ 52		175
+x 37		出力: "Unknown operator"
+- 175		0
++ 10		10
+/ 5			2
+/ 0			output: "Error: Zero division"
+* 8			16
+q			Program quits

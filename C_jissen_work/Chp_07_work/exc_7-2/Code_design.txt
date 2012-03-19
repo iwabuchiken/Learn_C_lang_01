@@ -1,0 +1,197 @@
+<Basics>------------------------------
+1. File: Code_design.txt
+2. Date: 20120215_063719
+3. Author: ä‚ï£Å@å™
+
+<functions>----------------------------
+int	input_yes_no( void );	/* yes => 1, no => 0	*/
+int	calculate_days
+	( int start_year, int start_month, int start_day,
+		int end_year, int end_month, int end_day)
+/*
+ *	get_date()
+ *
+ * <Return>
+ *	1	=> regular
+ *	-1	=> error
+ */
+*int	get_date(int year, int month, int day);
+
+/*
+ *	get_days()
+ *
+ * <Return>
+ *	1. enum DAYS member
+ *	2. -1 => error
+ */
+*int	get_days(int month);
+
+*int	get_days_yeardiff_0_monthdiff_0
+(int start_day, int end_day);
+
+*int	get_days_yeardiff_0_monthdiff_1
+	(int day_difference);
+
+*int	get_days_yeardiff_0_monthdiff_morethan_1
+( int start_year, int start_month, int start_day,
+int end_year, int end_month, int end_day);
+
+*int	get_days_yeardiff_1_monthdiff_0
+( int start_year, int start_month, int start_day,
+int end_year, int end_month, int end_day);
+
+int	get_days_yeardiff_morethan_1
+( int start_year, int start_month, int start_day,
+int end_year, int end_month, int end_day);
+
+<variables>-----------------------------
+1. Global
+enum	DAYS {
+	DAYS_JANUARY=31, DAYS_FEBRUARY=28,
+	DAYS_MARCH=30, DAYS_APRIL=30,
+	DAYS_MAY=31, DAYS_JUNE=30,
+	DAYS_JULY=31, DAYS_AUGUST=31,
+	DAYS_SEPTEMBER=30, DAYS_OCTOBER=31,
+	DAYS_NOVEMBER=30, DAYS_DECEMBER=31,
+} DAYS_LENGTH;
+2. Local: main()
+char	line[20];		/* line input	*/
+int		ans;			/* QA input				*/
+
+int		start_year;		/* start year	*/
+int		start_month;	/* start month	*/
+int		start_day;		/* start day	*/
+
+int		end_year;		/* end year		*/
+int		end_month;		/* end month	*/
+int		end_day;		/* end day		*/
+
+int		total_days;		/* total days	*/
+
+int		ans;			/* QA input		*/
+int		result;			/* return value of void function	*/
+
+3. Local: calculate_days()
+	int	total_days;		/* total days	*/
+
+4. Local: input_yes_no()
+
+5. Local: get_date
+char	line[30];		/* year month day	*/
+//int		result;			/* return value for the function	*/
+int		return_of_sscanf;	/* return value of sscanf()	*/
+
+6. Local: get_days_yeardiff_0_monthdiff_0
+	1. total_days:int
+
+<flow>------------------------------
+* self-made function
+(To do)				(More info)
+declare variables
+loop starts		while
+
+display			"Start date?"
+scan the input	fgets() + sscanf()
+
+display			"End date?"
+scan the input	fgets() + sscanf()
+
+display			"Days from *** to ***"
+display			"Calculate?" => input_yes_no()*
+
+calculate days	calculate_days()*
+
+<Algorythms>-----------------------------
+1. calculate_days()
+year_difference		= end_year - start_year
+month_difference	= end_month - start_month
+day_difference		= end_day - start_day
+
+if year_difference < 0:
+	=> show error
+
+if year_difference == 0:
+	if month_difference < 0:
+		=> show error
+	
+	if month_difference == 0:
+		if day_difference < 0:
+			=> show error
+		
+		if day_difference == 0:
+			=> total_days = 1
+			
+		if day_difference == 1:
+			=> total_days = 2
+			
+		if day_difference > 1:
+			=> total_days = (day_difference + 1)
+	
+	if month_difference == 1:
+		if day_difference < 0:
+			=> total_days = 
+				*get_days(start_month) - (start_day - 1)
+				+ *get_days(end_month) - (end_day - 1)
+
+		if day_difference == 0:
+			
+		if day_difference == 1:
+			
+		if day_difference > 1:
+	
+	if month_difference > 1:
+
+if year_difference == 1:
+	if month_difference < 0:
+	
+	if month_difference == 0:
+	
+	if month_difference == 1:
+	
+	if month_difference > 1:
+
+if year_difference > 1:
+	if month_difference < 0:
+	
+	if month_difference == 0:
+	
+	if month_difference == 1:
+	
+	if month_difference > 1:
+
+<coding steps>---------------------------
+*function: prototypes
+*function: skeleton body
+
+*variables: global
+
+*f:main(): local variables -> declare
+ 
+*f:main(): process -> first draft
+	1. while loop	-> declare
+
+*f:get_date()
+	*1. coding
+
+*f:main()
+	*1. get start date
+	*2. get end date
+
+v: enum: DAYS
+
+f:get_days()
+	1. coding
+
+<coding tips>---------------------------
+1. Regex
+(if )(.+$) => $1($2)
+if year_difference == 0 => if (year_difference == 0)
+
+<further>---------------------------
+1. add: func: is_leap_year() => return:boolean, param:int year
+2. check the number of days for a given month
+	>Enter date: 2012 3 35
+	>	=> month 3: last day is 30
+	>Enter date:
+
+===================EOF===================

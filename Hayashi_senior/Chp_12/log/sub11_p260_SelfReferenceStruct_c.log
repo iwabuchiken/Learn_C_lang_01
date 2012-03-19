@@ -1,0 +1,13 @@
+[log 2012/01/18 11:23:01] ------------------------
+<job>: Versioning
+File: sub11_p260_SelfReferenceStruct.c
+	Version file: version~sub11_p260_SelfReferenceStruct.c=1.0
+	New version file: version~sub11_p260_SelfReferenceStruct.c=1.1
+[/log 2012/01/18 11:23:01] ------------------------
+
+[log 2012/01/18 11:23:30] ------------------------
+<job>: Logging
+File: sub11_p260_SelfReferenceStruct.c
+	[v=1.1] display: ip, start
+[/log 2012/01/18 11:23:30] ------------------------
+

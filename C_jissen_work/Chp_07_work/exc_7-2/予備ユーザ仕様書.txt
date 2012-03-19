@@ -1,0 +1,14 @@
+予備仕様書
+<Basics>
+1. Program name: Day-length reporter
+2. Date: 20120215_063719
+3. Author: 岩淵　謙
+
+＜このプログラムが行うこと＞
+1.Answer how many days between the day x
+	and the day y
+ 
+<Example>
+1.	>Start date? 2012 02 01
+	>End date? 2012 06 12
+	>Days => 125

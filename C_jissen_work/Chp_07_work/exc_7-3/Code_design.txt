@@ -1,0 +1,47 @@
+<Basics>------------------------------
+1. File: Code_design.txt
+2. Date: 20120216_093902
+3. Author: 岩淵　謙
+
+<functions>----------------------------
+*int	get_file_size( void );
+
+*double get_transfer_time_seconds
+( int file_size );
+
+*char*	format_seconds
+( double transfer_time_seconds,
+	char transfer_time_string[]);
+
+<variables>-----------------------------
+1. Global
+
+2. Local: main()
+	char	line[20];		/* line input	*/
+	int		file_size;		/* file size input	*/
+	double	transfer_time_seconds;		/* transfer time in second	*/
+	char*	transfer_time_string[30];	/* transfer time string		*/
+
+3. Local: get_file_size()
+	char	line[20];		/* line input	*/
+	int		file_size;		/* file size input	*/
+<flow>------------------------------
+*input the file size
+	=> "Input the file size: "
+
+*calculate
+
+*display
+
+<Algorythms & formula>-------------------
+1. transfer time (seconds): 
+	:get_transfer_time_seconds()
+	=> file_size / CHARS_PER_SECOD
+
+<coding steps>---------------------------
+
+<further>---------------------------
+１．表示に、"x day(s)" を加えよう。
+２．サイズの入力時、数値かどうかを検証する
+３．"Continue?" のステップを加えよう。
+===================EOF===================

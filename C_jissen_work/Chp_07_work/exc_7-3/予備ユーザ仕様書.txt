@@ -1,0 +1,14 @@
+予備仕様書
+<Basics>
+1. Program name: Characters transfer 
+					time calculater
+2. Date: 20120216_093902
+3. Author: 岩淵　謙
+
+＜このプログラムが行うこと＞
+1. Calculate the transfer time of a 400M-byte 
+	file
+2. The program presupposes that the transfer 
+	rate be 960 characters per second
+ 
+<Example>

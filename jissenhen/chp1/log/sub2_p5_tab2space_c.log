@@ -1,0 +1,48 @@
+[log 2011/12/26 09:40:50] ------------------------
+<job>: Versioning
+File: sub2_p5_tab2space.c
+	Version file: version~sub2_p5_tab2space.c=1.0
+	New version file: version~sub2_p5_tab2space.c=1.1
+[/log 2011/12/26 09:40:50] ------------------------
+
+[log 2011/12/26 10:11:17] ------------------------
+<job>: Versioning
+File: sub2_p5_tab2space.c
+	Version file: version~sub2_p5_tab2space.c=1.1
+	New version file: version~sub2_p5_tab2space.c=1.2
+[/log 2011/12/26 10:11:17] ------------------------
+
+[log 2011/12/26 10:15:50] ------------------------
+<job>: Versioning
+File: sub2_p5_tab2space.c
+	Version file: version~sub2_p5_tab2space.c=1.2
+	New version file: version~sub2_p5_tab2space.c=1.3
+[/log 2011/12/26 10:15:50] ------------------------
+
+[log 2011/12/26 10:33:33] ------------------------
+<job>: Versioning
+File: sub2_p5_tab2space.c
+	Version file: version~sub2_p5_tab2space.c=1.3
+	New version file: version~sub2_p5_tab2space.c=1.4
+[/log 2011/12/26 10:33:33] ------------------------
+
+[log 2011/12/26 10:50:03] ------------------------
+<job>: Versioning
+File: sub2_p5_tab2space.c
+	Version file: version~sub2_p5_tab2space.c=1.4
+	New version file: version~sub2_p5_tab2space.c=1.5
+[/log 2011/12/26 10:50:03] ------------------------
+
+[log 2011/12/26 10:55:51] ------------------------
+<job>: Versioning
+File: sub2_p5_tab2space.c
+	Version file: version~sub2_p5_tab2space.c=1.5
+	New version file: version~sub2_p5_tab2space.c=1.6
+[/log 2011/12/26 10:55:51] ------------------------
+
+[log 2011/12/26 10:56:15] ------------------------
+<job>: Logging
+File: sub2_p5_tab2space.c
+	[v=1.5] experiment complete
+[/log 2011/12/26 10:56:15] ------------------------
+

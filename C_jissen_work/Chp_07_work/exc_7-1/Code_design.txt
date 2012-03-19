@@ -1,0 +1,37 @@
+<Basics>------------------------------
+1. File: Code_design.txt
+2. Date: 20120215_063719
+3. Author: ä‚ï£Å@å™
+
+<functions>----------------------------
+double	mile2meter(double value);
+double	gallon2litter(double value);
+double	input_mile( void );
+double	input_value( const char* message );
+int		handle_input_choose( void );
+//void	show_result
+//	(double mile_pound_value, double	meter_value);
+
+<variables>-----------------------------
+1. Global
+double	mile_to_meter_rate;	/* rate for mile-meter conversion	*/
+double	gallon_to_litter;	/* rate for US gallon to litter		*/
+2. Local: main()
+char	line[20];		/* line input			*/
+double	meter_litter_value;	/* meter-scale value	*/
+double	mile_pound_value;	/* mile-pound-scale value	*/
+int		ans;			/* QA input				*/
+	
+<flow>------------------------------
+* self-made function
+(To do)			(More info)
+declare variables
+loop starts		while
+display			"Choose genre"
+scan the input	fgets() + sscanf()
+convert			mile2meter()*, gallon2litter
+display			"Converted"
+display continue?	"continue?"; fgets() + sscanf()
+loop ends		while
+
+===================EOF===================

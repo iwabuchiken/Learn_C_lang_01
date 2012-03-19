@@ -1,0 +1,38 @@
+<Basics>------------------------------
+1. File: Code_design.txt
+2. Date: 20120216_093902
+3. Author: ä‚ï£Å@å™
+
+<macros>----------------------------
+#define TAX_RATE	0.05
+<functions>----------------------------
+int get_total
+( int price, int* tax, double* tax_floating );
+
+*int get_price( void );
+
+
+<variables>-----------------------------
+1. Global
+
+2. Local: main()
+	char	line[10];
+	int		price;
+	double tax_floating;	/* tax amount in float	*/
+	int		total;		/* total		*/	
+3. get_price()
+	char	line[10];
+	int		price;
+	
+<flow>------------------------------
+enter the price
+calculate
+display the result
+
+<Algorythms & formula>-------------------
+
+<coding steps>---------------------------
+
+<further>---------------------------
+
+===================EOF===================

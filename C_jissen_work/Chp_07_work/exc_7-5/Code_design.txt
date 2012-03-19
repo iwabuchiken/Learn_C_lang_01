@@ -1,0 +1,63 @@
+<Basics>------------------------------
+1. File: Code_design.txt
+2. Date: 20120216_093902
+3. Author: Šâ•£@Œª
+
+<macros>----------------------------
+#define true	1
+#define false	0
+
+<functions>----------------------------
+int input_number( void );
+int is_digit(const char* string);
+
+<variables>-----------------------------
+1. Global
+
+2. Local: main()
+	char	line[10];
+	int		price;
+
+<flow>------------------------------
+input a number
+judge if prime number
+report the result
+	1. If the number is a prime
+	2. If not a prime, then the largest
+		divider
+
+<Algorythms & formula>-------------------
+1. Judge if the number is a prime or not
+	The target number x
+	h = (int)x / 2
+	if (h == 1)
+		prime_number = true;
+	r = x % h
+	if (r == 0)
+		prime_number = false;
+	result = judge_prime_number(h);
+	
+	return result;
+<coding steps>---------------------------
+
+<further>---------------------------
+
+<phrases>===============================
+1.-----------------------------
+while (1) {
+	printf("Input a number: ");
+	fgets(line, sizeof(line), stdin);
+	sscanf(line, "%d", &number);
+	if (!isdigit(number)) {
+		break;
+	} else {
+		printf("Non-number input: %d\n",
+				number);
+	}
+}//while (1)
+2.----------------------------------
+/* variables	*/
+char	line[10];	/* input line	*/
+int		number;		/* number input	*/
+
+===================EOF===================

@@ -1,0 +1,11 @@
+*.exe
+*.tds
+*.obj
+*.o
+Debug/
+Debug/*
+Learn_C_lang_01/C_jissen_work/Chp_08_work/exc/exc_8-2/*.exe
+Learn_C_lang_01/C_jissen_work/Chp_08_work/exc/exc_8-2/*.tds
+Learn_C_lang_01/C_jissen_work/Chp_08_work/exc/exc_8-2/*.obj
+Learn_C_lang_01/C_jissen_work/Chp_08_work/exc/exc_8-2/*.o
+
