@@ -8,8 +8,11 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/G20111104_083701_C_learn_01"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/Learn_C_lang_01"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/G20111104_083701_C_learn_01/Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/Learn_C_lang_01/Debug"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="G20111104_083701_C_learn_01"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="Learn_C_lang_01"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -21,6 +24,7 @@
 					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.errorparsers.xlc.XlcErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -40,8 +44,11 @@
 				<externalSettings>
 					<externalSetting>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/G20111104_083701_C_learn_01"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/Learn_C_lang_01"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/G20111104_083701_C_learn_01/Release"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/Learn_C_lang_01/Release"/>
 						<entry flags="RESOLVED" kind="libraryFile" name="G20111104_083701_C_learn_01"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="Learn_C_lang_01"/>
 					</externalSetting>
 				</externalSettings>
 				<extensions>
@@ -53,6 +60,7 @@
 					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.errorparsers.xlc.XlcErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">

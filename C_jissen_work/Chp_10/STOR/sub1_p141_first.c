@@ -1,15 +1,21 @@
 /************************************`
  * <Basics>
- *	1. File: sub1_unsigned_integer.c
+ *	1. File: sub1_p141_first.c
  *	2. Author: Iwabuchi Ken				*
- *	3. Date: 20120318_113319
+ *	3. Date: 20120324_232015
  *	4. Dependencies:
  *		1)
  * <Aim>
- * 	1. input a number string ( 2 digit number )
- *  2. get the second digit as an integer
+ * 	1.
  * <Usage>
- *	1. Execute the program
+ *	1. Execute the program			*
+ * <Source>
+ * 	1. 
+ * <Related>
+ * 	1.
+ * <Others>
+ * <Description of the program>
+ * 	1. 
  ************************************/
 
 #ifndef INCLUDE_STDIO_H
@@ -51,50 +57,21 @@
 #endif
 #endif
 
-#include <limits.h>
+
 
 // macros ============================
-
+#define FIRST_PART  7
+#define LAST_PART   5
+#define ALL_PARTS    FIRST_PART + LAST_PART
 // global vars ============================
-
 // prototypes ============================
-
 // functions ============================
-
 int main(int argc, char* argv[])
 {
 	/* variables	*/
-    const   char    *name;
+    printf("The square is: %d\n", ALL_PARTS * ALL_PARTS);
     
-    /* input           */
-    name = strrchr(argv[0], '/');
-    
-    if (name == NULL) {
-    	//debug
-    	printf("[LINE:%d]", __LINE__);
-    	printf("no '/' in argv[0]\n");
-
-        name = strrchr(argv[0], '\\');
-        //name = strrchr(argv[0], '^');
-
-    }//if (name == NULL)
-    
-    /* modify the char  */
-    if (name != NULL) {
-        ++name;
-/*
-    } else {//if (name != NULL)
-        name = "-";
-    }//if (name != NULL)
-*/
-    }//if (name != NULL)
-    
-    /* show         */
-    printf("argv[0]=%s\n", argv[0]);
-    printf("name=%s\n", name);
-
-    
-    return (0);
+	return (0);
 }//int main(int argc, char* argv[])
 
 /*

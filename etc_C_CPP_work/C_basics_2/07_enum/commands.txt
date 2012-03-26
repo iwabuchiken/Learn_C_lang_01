@@ -1,0 +1,3 @@
+cd C:\WORKS\WORKSPACES\Learn_C_lang_01\etc_C_CPP_work\C_basics_2\07_enum
+cd C:\workspaces\ws_ubuntu_1\G20110617_095214_nbp_new\cpp
+

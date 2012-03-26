@@ -1,8 +1,8 @@
 /************************************`
  * <Basics>
- *	1. File: sub1_unsigned_integer.c
+ *	1. File: sub1_enum.c
  *	2. Author: Iwabuchi Ken				*
- *	3. Date: 20120318_113319
+ *	3. Date: 20120323_142731
  *	4. Dependencies:
  *		1)
  * <Aim>
@@ -53,47 +53,31 @@
 
 #include <limits.h>
 
-// macros ============================
+enum Colors {BLACK, YELLOW, BLUE} color;
 
-// global vars ============================
-
-// prototypes ============================
-
-// functions ============================
+//struct Colors {
+struct Color {
+	int		color;
+};
 
 int main(int argc, char* argv[])
 {
 	/* variables	*/
-    const   char    *name;
-    
-    /* input           */
-    name = strrchr(argv[0], '/');
-    
-    if (name == NULL) {
-    	//debug
-    	printf("[LINE:%d]", __LINE__);
-    	printf("no '/' in argv[0]\n");
+	//struct Colors		mono;
+	struct Color		mono;
+	color;
 
-        name = strrchr(argv[0], '\\');
-        //name = strrchr(argv[0], '^');
+	/* set values		*/
+	color		= BLACK;
+	mono.color	= YELLOW;
 
-    }//if (name == NULL)
-    
-    /* modify the char  */
-    if (name != NULL) {
-        ++name;
-/*
-    } else {//if (name != NULL)
-        name = "-";
-    }//if (name != NULL)
-*/
-    }//if (name != NULL)
-    
-    /* show         */
-    printf("argv[0]=%s\n", argv[0]);
-    printf("name=%s\n", name);
+    printf("color=%d\n", color);
+    printf("mono.color=%d\n", mono.color);
 
-    
+    /* different value		*/
+    color		= 200;
+    printf("color=%d\n", color);
+
     return (0);
 }//int main(int argc, char* argv[])
 
